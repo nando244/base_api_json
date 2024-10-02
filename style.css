@@ -1,62 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-:root {
-    --light-orange: #fce8d8;
-    --salmon-pink: #ffb6c1;
-    --raspberry-rose: #a63e4b;
-    --chocolate-cosmos: #402020;
-    --fonte-titulo: "Jacques Francois Shadow", serif;
-    --fonte-texto: "Montserrat", sans-serif;
+:root{
+    --azul-escuro: #0a2463ff;
+    --verde: rgb(55, 255, 0);
+--azul-claro: rgb(168, 94, 163);
+--branco: #fffaffff;
+--azul: rgb(0, 4, 255);
+--preto: #1e1b18ff;
+--vermelho: #d4d4d4;
+--fonte-titulo:"Jacques Francois Shadow", serif;
+--fonte-texto:"Roboto", sans-serif;
 }
 
-body {
-    background-color: var(--light-orange);
+
+body{
+    background-color: var(--azul-escuro);
     font-family: var(--fonte-texto);
-    color: var(--chocolate-cosmos);
-    display: flex;
-    flex-direction: column;
+    color: var(--vermelho);
     height: 100vh;
 }
-
-header {
-    background-color: var(--raspberry-rose);
+header{
+    background-color: var(--preto);
     text-align: center;
-    padding: 1.5rem 0;
 }
-
 h1 {
     font-family: var(--fonte-titulo);
-    font-size: 3rem;
-    color: var(--salmon-pink);
-    padding: 1rem 0;
+    font-size: 3em;
+    color: var(--vermelho);
+    padding: 0.5em 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
+    font-weight: 400;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--light-orange);
-    font-size: 1.8rem;
-    margin: 0 1rem;
+    color: var(--vermelho);
+    font-size: 2em;
+    margin: 0 1em 0.5em 0;
 }
 
 nav a:hover {
-    color: var(--salmon-pink);
+    text-decoration: underline;
+    color: var(--branco);
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+.caixa-grafico{
+    margin:5rem;
+}
+.caixa-grafico__texto{
+    font: 1,5rem;
+    background:var(--azul-claro);
+    padding: 2rem;
+    border-radius: 25px;
+    color: var(--branco);
+    border: var(--branco);
+
+}
+span{
+    font-family: var(--preto);
+    color: var(--preto);
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+    color:var(--vermelho);
+    width: 100%;
+    height: 3em;
+    margin-top: 3em;
+    font-size: 1.5em;
+    
 }
 
-footer {
-    text-align: center;
-    background-color: var(--raspberry-rose);
-    color: var(--light-orange);
-    padding: 1rem 0;
-    margin-top: auto;
-}
+
